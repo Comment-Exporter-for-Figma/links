@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Comment Exporter for Figma</title>
+<meta name="description" content="What Figma Comment Exporter does with your information, why, and what you can ask us to do about it.">
+<style>
+  :root {
+    --paper:      #fcfcfb;
+    --ink:        #161d26;
+    --ink-soft:   #545e6b;
+    --rule:       #dfe0dd;
+    --rule-soft:  #ececea;
+    --keep:       #3D14F3;
+    --keep-bg:    #f9f8ff;
+    --flag:       #8a5a00;
+    --flag-bg:    #fdf4e3;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+    font-size: 18px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 40rem;
+    margin: 0 auto;
+    padding: 4rem 1.5rem 6rem;
+  }
+
+  /* ---- masthead ---- */
+
+  .masthead { padding-bottom: 2.5rem; }
+
+  .product {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+    margin: 0 0 1.75rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 1.15;
+    letter-spacing: -0.01em;
+    margin: 0 0 1.25rem;
+  }
+
+  .standfirst {
+    font-size: 1.15rem;
+    line-height: 1.55;
+    color: var(--ink-soft);
+    margin: 0 0 1.5rem;
+  }
+
+  .updated {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin: 0;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+  }
+
+  /* ---- the one bold element ---- */
+
+  .stays {
+    background: var(--keep-bg);
+    border-left: 3px solid var(--keep);
+    padding: 1.5rem 1.5rem 1.25rem;
+    margin: 3rem 0;
+  }
+
+  .stays p {
+    margin: 0 0 0.85rem;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+
+  .stays p:last-child { margin-bottom: 0; }
+
+  .stays strong {
+    font-weight: 600;
+    color: var(--keep);
+  }
+
+  /* ---- contents ---- */
+
+  nav.contents {
+    margin: 3rem 0;
+    padding: 1.5rem 0;
+    border-top: 1px solid var(--rule);
+    border-bottom: 1px solid var(--rule);
+  }
+
+  nav.contents ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    columns: 2;
+    column-gap: 2.5rem;
+    font-size: 0.95rem;
+  }
+
+  nav.contents li {
+    margin-bottom: 0.4rem;
+    break-inside: avoid;
+  }
+
+  nav.contents a {
+    color: var(--ink-soft);
+    text-decoration: none;
+  }
+
+  nav.contents a:hover { color: var(--ink); text-decoration: underline; }
+
+  nav.contents .num {
+    display: inline-block;
+    min-width: 1.4rem;
+    color: var(--ink);
+  }
+
+  /* ---- sections ---- */
+
+  section { margin-top: 3.5rem; }
+
+  h2 {
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 1.25;
+    margin: 0 0 1.25rem;
+    scroll-margin-top: 2rem;
+  }
+
+  h2 .num {
+    color: var(--ink-soft);
+    font-weight: 400;
+    margin-right: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 2.25rem 0 0.85rem;
+  }
+
+  p { margin: 0 0 1.1rem; }
+
+  ul { margin: 0 0 1.1rem; padding-left: 1.3rem; }
+
+  li { margin-bottom: 0.6rem; }
+
+  strong { font-weight: 600; }
+
+  a { color: var(--ink); text-decoration-color: var(--rule); text-underline-offset: 2px; }
+
+  a:hover { text-decoration-color: currentColor; }
+
+  a:focus-visible,
+  nav.contents a:focus-visible {
+    outline: 2px solid var(--keep);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  .note {
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---- placeholders: delete this rule once filled in ---- */
+
+  .fill {
+    background: var(--flag-bg);
+    color: var(--flag);
+    padding: 0.05em 0.35em;
+    border-bottom: 1px dashed currentColor;
+    font-style: italic;
+  }
+
+  /* ---- footer ---- */
+
+  footer {
+    margin-top: 4.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--rule);
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+
+  footer p { margin: 0 0 0.5rem; }
+
+  @media (max-width: 34rem) {
+    body { font-size: 17px; }
+    .page { padding: 2.5rem 1.25rem 4rem; }
+    h1 { font-size: 1.85rem; }
+    nav.contents ol { columns: 1; }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; transition: none !important; }
+  }
+
+  @media print {
+    body { background: #fff; font-size: 11pt; }
+    nav.contents { display: none; }
+    .stays { border-left-width: 2px; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header class="masthead">
+    <p class="product">Figma Comment Exporter</p>
+    <h1>Privacy Policy</h1>
+    <p class="standfirst">What we do with information about you, why, and what you can ask us to do about it.</p>
+    <p class="updated">Last updated: <strong>September 15th, 2026</strong></p>
+  </header>
+
+  <div class="stays">
+    <p>Your Figma access token <strong>stays on your device</strong>. We never see or store it.</p>
+    <p>Your designs and your comments <strong>are never sent to our servers</strong>. Exports are created on your device.</p>
+    <p>We <strong>do not sell your data</strong> or use it for advertising.</p>
+  </div>
+  <section>
+    <h2 id="s1"><span class="num">1</span>Introduction</h2>
+    <p>Welcome to <strong>Figma Comment Exporter</strong> (“we,” “us,” or “our”). We are committed to protecting your privacy and personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard information when you use the Figma Comment Exporter plugin and related services.
+</p>
+  </section>
+
+  <section>
+    <h2 id="s2"><span class="num">2</span>Information we collect</h2>
+
+    <h3>2.1 Account</h3>
+    <p>You do not need to create an account to use the plugin. On the free plan you are identified by your Figma user ID, and we do not collect your email address.</p>
+    <p>When you buy a subscription, we collect your email address from the checkout to identify your account.</p>
+
+    <h3>2.2 Billing information</h3>
+    <p>We use Lemon Squeezy as our Merchant of Record. Lemon Squeezy manages your payment details, such as your card information. <strong>We do not store your payment information.</strong></p>
+    <p>We do store the subscription record Lemon Squeezy sends us: subscription and customer identifiers, your plan, subscription status, renewal date, billing country, and the last four digits and brand of your card.</p>
+
+    <h3>2.3 Usage and technical data</h3>
+    <p>We automatically collect certain technical data when you use the Service, including:</p>
+    <ul>
+      <li><strong>Log Data:</strong> IP address, browser type, operating system & access times.</li>
+      <li><strong>Analytics Data:</strong> Anonymous usage statistics to help us improve the Service.</li>
+    </ul>
+
+    <h3>2.4 Your tokens, comments and designs</h3>
+    <p>To read comments, the plugin uses a Figma personal access token that you create in your own Figma settings.</p>
+    <ul>
+      <li><strong>Your token.</strong> Stored on your device using Figma's plugin storage. It is never sent to our servers and we never see it. You can remove it at any time from within the plugin.</li>
+      <li><strong>Your comments and designs.</strong> Read from Figma's API directly by your device, and never sent to our servers. The entire export is generated locally.</li>
+      <li><strong>Comment attachments.</strong> The companion browser extension reads attachment data from the Figma page you have open and passes it to the plugin on your own device. Attachment data is never uploaded to our servers.</li>
+      <li><strong>Exported files.</strong> Created on your computer, and we never receive them. An export contains your comment text, commenter names and avatars, and images of your design, so share it as carefully as you would share the design itself. When the file is opened it requests fonts from Google Fonts, which means Google may see the reader's IP address. If a comment contains a direct link to an image hosted elsewhere, that image is loaded from its original host when the file is opened. No other external request is made.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="s3"><span class="num">3</span>How we use it</h2>
+    <ul>
+      <li><strong>Service delivery.</strong> Run the plugin, apply your plan limits, and process your subscription.</li>
+      <li><strong>Support.</strong> Respond to your questions and troubleshoot errors.</li>
+      <li><strong>Security.</strong> Prevent abuse and protect the Service.</li>
+      <li><strong>Improvement.</strong> Understand which features are used, and fix faults.</li>
+    </ul>
+    
+  </section>
+
+  <section>
+    <h2 id="s4"><span class="num">4</span>How we share it</h2>
+    <p>We do not sell your personal data, and we do not share it for advertising. We share information only in these situations:</p>
+    <ul>
+      <li><strong>Service Providers (Sub-processors):</strong> cloud servers, payment processing and authentication.</li>
+      <li><strong>Legal obligations.</strong> Where required by law, or in response to valid requests by public authorities.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="s5"><span class="num">5</span>Data retention</h2>
+    <ul>
+      <li><strong>Account data.</strong> Kept while your account is active, or as needed to provide the Service.</li>
+      <li><strong>Export activity logs.</strong> Kept for 90 days, then deleted automatically.</li>
+      <li><strong>Payment records.</strong> Kept as required by tax and accounting law.</li>
+      <li><strong>Your Figma token.</strong> Never held by us. It stays on your device until you remove it.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="s6"><span class="num">6</span>Security</h2>
+    <p>We implement appropriate technical and organizational security measures designed to protect the security of any personal information we process. This includes encryption of data in transit (HTTPS).</p>
+  </section>
+
+  <section>
+    <h2 id="s7"><span class="num">7</span>Your rights (GDPR and CCPA)</h2>
+    <p>Depending on where you live, you may have the right to:</p>
+    <ul>
+      <li><strong>Access</strong> — request a copy of your personal data.</li>
+      <li><strong>Rectification</strong> — have information you believe is inaccurate corrected.</li>
+      <li><strong>Erasure</strong> — request that we delete your personal data.</li>
+      <li><strong>Portability</strong> — receive your data in a machine-readable format.</li>
+    </ul>
+    <p>To exercise these rights, please contact us at <a href="mailto:contact.figcom@gmail.com"> contact.figcom@gmail.com</a>.</p>
+  </section>
+
+  <section>
+    <h2 id="s8"><span class="num">8</span>International transfers</h2>
+    <p>Our processing servers are located in United States. If you are accessing our Service from outside, please be aware that your information may be transferred to, stored, and processed by us in our facilities and by those third parties with whom we may share your personal information.</p>
+  </section>
+
+  <section>
+    <h2 id="s9"><span class="num">9</span>Changes to this policy</h2>
+    <p>We may update this policy from time to time. The updated version is indicated by the date at the top of this page and takes effect as soon as it is posted.</p>
+  </section>
+
+  <section>
+    <h2 id="s10"><span class="num">10</span>Contact</h2>
+    <p>If you have questions or comments about this policy, contact us at:</p>
+    <ul>
+      <li>Email — <a href="mailto:contact.figcom@gmail.com"> contact.figcom@gmail.com</a>.</li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>Figma Comment Exporter</p>
+    <p>This page makes no external requests.</p>
+  </footer>
+
+</div>
+</body>
+</html>
